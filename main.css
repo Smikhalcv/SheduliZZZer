@@ -4,6 +4,8 @@
   --btn-color: #e5e2e2;
   --btn-bg: #6c757d;
   --btn-bg-hover: #343a40;
+  --btn-del-bg: #EF3737;
+  --btn-del-bg-hover: #862222;
   --grey-bg: rgba(133, 131, 131, 0.89);
   --dark-bg: rgba(115, 112, 112, 0.89);
   --white-text: #e5e2e2;
@@ -282,6 +284,57 @@ input[type='submit'] {
 /* sidebar end */
 
 /* main */
+
+/* professions-pages */
+
+.prof-point {
+  box-shadow: var(--shadow-item);
+  border-radius: 4px;
+  padding-left: 30px;
+  font-size: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 87px;
+}
+
+.prof-point:nth-child(1) {
+  margin-top: 54px;
+}
+
+.prof-point:nth-child(n+2) {
+  margin-top: 31px;
+}
+
+.prof-link {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--link-color);
+  align-items: center;
+}
+
+.prof-link:hover {
+  color: var(--link-hover);
+}
+
+.prof-button {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  z-index: 10;
+  background-color: var(--btn-del-bg);
+  border-radius: 4px;
+  color: var(--white-text);
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 7px 10px;
+}
+
+.prof-button:hover {
+  background-color: var(--btn-del-bg-hover);
+}
+
+/* end profession-page */
 
 /* teacher-page */
 .teachers-container {
