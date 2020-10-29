@@ -12,7 +12,8 @@
 
   <body>
     <div class="wrapper-page container">
-      <aside class="sidebar">
+      <div class="overlay"></div>
+      <aside class="sidebar sidebar-toggle">
         <header class="sidebar-header">
           <a class="sidebar-logo" href="#">
             <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc3IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMTc3IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNy43NTk3NyAxMy40OTMyQzUuMzQ3NjYgMTIuNzk5OCAzLjU4OTg0IDExLjk1MDIgMi40ODYzMyAxMC45NDQzQzEuMzkyNTggOS45Mjg3MSAwLjg0NTcwMyA4LjY3ODcxIDAuODQ1NzAzIDcuMTk0MzRDMC44NDU3MDMgNS41MTQ2NSAxLjUxNDY1IDQuMTI3OTMgMi44NTI1NCAzLjAzNDE4QzQuMjAwMiAxLjkzMDY2IDUuOTQ4MjQgMS4zNzg5MSA4LjA5NjY4IDEuMzc4OTFDOS41NjE1MiAxLjM3ODkxIDEwLjg2NTIgMS42NjIxMSAxMi4wMDc4IDIuMjI4NTJDMTMuMTYwMiAyLjc5NDkyIDE0LjA0ODggMy41NzYxNyAxNC42NzM4IDQuNTcyMjdDMTUuMzA4NiA1LjU2ODM2IDE1LjYyNiA2LjY1NzIzIDE1LjYyNiA3LjgzODg3SDEyLjc5ODhDMTIuNzk4OCA2LjU0OTggMTIuMzg4NyA1LjUzOTA2IDExLjU2ODQgNC44MDY2NEMxMC43NDggNC4wNjQ0NSA5LjU5MDgyIDMuNjkzMzYgOC4wOTY2OCAzLjY5MzM2QzYuNzA5OTYgMy42OTMzNiA1LjYyNTk4IDQuMDAwOTggNC44NDQ3MyA0LjYxNjIxQzQuMDczMjQgNS4yMjE2OCAzLjY4NzUgNi4wNjY0MSAzLjY4NzUgNy4xNTAzOUMzLjY4NzUgOC4wMTk1MyA0LjA1MzcxIDguNzU2ODQgNC43ODYxMyA5LjM2MjNDNS41MjgzMiA5Ljk1ODAxIDYuNzgzMiAxMC41MDQ5IDguNTUwNzggMTEuMDAyOUMxMC4zMjgxIDExLjUwMSAxMS43MTQ4IDEyLjA1MjcgMTIuNzEwOSAxMi42NTgyQzEzLjcxNjggMTMuMjUzOSAxNC40NTkgMTMuOTUyMSAxNC45Mzc1IDE0Ljc1MjlDMTUuNDI1OCAxNS41NTM3IDE1LjY2OTkgMTYuNDk2MSAxNS42Njk5IDE3LjU4MDFDMTUuNjY5OSAxOS4zMDg2IDE0Ljk5NjEgMjAuNjk1MyAxMy42NDg0IDIxLjc0MDJDMTIuMzAwOCAyMi43NzU0IDEwLjQ5OSAyMy4yOTMgOC4yNDMxNiAyMy4yOTNDNi43NzgzMiAyMy4yOTMgNS40MTExMyAyMy4wMTQ2IDQuMTQxNiAyMi40NThDMi44NzIwNyAyMS44OTE2IDEuODkwNjIgMjEuMTIwMSAxLjE5NzI3IDIwLjE0MzZDMC41MTM2NzIgMTkuMTY3IDAuMTcxODc1IDE4LjA1ODYgMC4xNzE4NzUgMTYuODE4NEgyLjk5OTAyQzIuOTk5MDIgMTguMTA3NCAzLjQ3MjY2IDE5LjEyNzkgNC40MTk5MiAxOS44Nzk5QzUuMzc2OTUgMjAuNjIyMSA2LjY1MTM3IDIwLjk5MzIgOC4yNDMxNiAyMC45OTMyQzkuNzI3NTQgMjAuOTkzMiAxMC44NjUyIDIwLjY5MDQgMTEuNjU2MiAyMC4wODVDMTIuNDQ3MyAxOS40Nzk1IDEyLjg0MjggMTguNjU0MyAxMi44NDI4IDE3LjYwOTRDMTIuODQyOCAxNi41NjQ1IDEyLjQ3NjYgMTUuNzU4OCAxMS43NDQxIDE1LjE5MjRDMTEuMDExNyAxNC42MTYyIDkuNjgzNTkgMTQuMDQ5OCA3Ljc1OTc3IDEzLjQ5MzJaTTIxLjU3MzIgOS4wNjkzNEMyMi43NzQ0IDcuNTk0NzMgMjQuMzM2OSA2Ljg1NzQyIDI2LjI2MDcgNi44NTc0MkMyOS42MTA0IDYuODU3NDIgMzEuMjk5OCA4Ljc0NzA3IDMxLjMyOTEgMTIuNTI2NFYyM0gyOC42MTkxVjEyLjUxMTdDMjguNjA5NCAxMS4zNjkxIDI4LjM0NTcgMTAuNTI0NCAyNy44MjgxIDkuOTc3NTRDMjcuMzIwMyA5LjQzMDY2IDI2LjUyNDQgOS4xNTcyMyAyNS40NDA0IDkuMTU3MjNDMjQuNTYxNSA5LjE1NzIzIDIzLjc5IDkuMzkxNiAyMy4xMjYgOS44NjAzNUMyMi40NjE5IDEwLjMyOTEgMjEuOTQ0MyAxMC45NDQzIDIxLjU3MzIgMTEuNzA2MVYyM0gxOC44NjMzVjAuNUgyMS41NzMyVjkuMDY5MzRaTTQxLjk2MzkgMjMuMjkzQzM5LjgxNTQgMjMuMjkzIDM4LjA2NzQgMjIuNTg5OCAzNi43MTk3IDIxLjE4MzZDMzUuMzcyMSAxOS43Njc2IDM0LjY5ODIgMTcuODc3OSAzNC42OTgyIDE1LjUxNDZWMTUuMDE2NkMzNC42OTgyIDEzLjQ0NDMgMzQuOTk2MSAxMi4wNDMgMzUuNTkxOCAxMC44MTI1QzM2LjE5NzMgOS41NzIyNyAzNy4wMzcxIDguNjA1NDcgMzguMTExMyA3LjkxMjExQzM5LjE5NTMgNy4yMDg5OCA0MC4zNjcyIDYuODU3NDIgNDEuNjI3IDYuODU3NDJDNDMuNjg3NSA2Ljg1NzQyIDQ1LjI4OTEgNy41MzYxMyA0Ni40MzE2IDguODkzNTVDNDcuNTc0MiAxMC4yNTEgNDguMTQ1NSAxMi4xOTQzIDQ4LjE0NTUgMTQuNzIzNlYxNS44NTE2SDM3LjQwODJDMzcuNDQ3MyAxNy40MTQxIDM3LjkwMTQgMTguNjc4NyAzOC43NzA1IDE5LjY0NTVDMzkuNjQ5NCAyMC42MDI1IDQwLjc2MjcgMjEuMDgxMSA0Mi4xMTA0IDIxLjA4MTFDNDMuMDY3NCAyMS4wODExIDQzLjg3NzkgMjAuODg1NyA0NC41NDIgMjAuNDk1MUM0NS4yMDYxIDIwLjEwNDUgNDUuNzg3MSAxOS41ODY5IDQ2LjI4NTIgMTguOTQyNEw0Ny45NDA0IDIwLjIzMTRDNDYuNjEyMyAyMi4yNzI1IDQ0LjYyMDEgMjMuMjkzIDQxLjk2MzkgMjMuMjkzWk00MS42MjcgOS4wODM5OEM0MC41MzMyIDkuMDgzOTggMzkuNjE1MiA5LjQ4NDM4IDM4Ljg3MyAxMC4yODUyQzM4LjEzMDkgMTEuMDc2MiAzNy42NzE5IDEyLjE4OTUgMzcuNDk2MSAxMy42MjVINDUuNDM1NVYxMy40MTk5QzQ1LjM1NzQgMTIuMDQzIDQ0Ljk4NjMgMTAuOTc4NSA0NC4zMjIzIDEwLjIyNjZDNDMuNjU4MiA5LjQ2NDg0IDQyLjc1OTggOS4wODM5OCA0MS42MjcgOS4wODM5OFpNNTAuNjM1NyAxNC45NDM0QzUwLjYzNTcgMTIuNTExNyA1MS4yMTE5IDEwLjU1ODYgNTIuMzY0MyA5LjA4Mzk4QzUzLjUxNjYgNy41OTk2MSA1NS4wMjU0IDYuODU3NDIgNTYuODkwNiA2Ljg1NzQyQzU4Ljc0NjEgNi44NTc0MiA2MC4yMTU4IDcuNDkyMTkgNjEuMjk5OCA4Ljc2MTcyVjAuNUg2NC4wMDk4VjIzSDYxLjUxOTVMNjEuMzg3NyAyMS4zMDA4QzYwLjMwMzcgMjIuNjI4OSA1OC43OTQ5IDIzLjI5MyA1Ni44NjEzIDIzLjI5M0M1NS4wMjU0IDIzLjI5MyA1My41MjY0IDIyLjU0MSA1Mi4zNjQzIDIxLjAzNzFDNTEuMjExOSAxOS41MzMyIDUwLjYzNTcgMTcuNTcwMyA1MC42MzU3IDE1LjE0ODRWMTQuOTQzNFpNNTMuMzQ1NyAxNS4yNTFDNTMuMzQ1NyAxNy4wNDc5IDUzLjcxNjggMTguNDU0MSA1NC40NTkgMTkuNDY5N0M1NS4yMDEyIDIwLjQ4NTQgNTYuMjI2NiAyMC45OTMyIDU3LjUzNTIgMjAuOTkzMkM1OS4yNTM5IDIwLjk5MzIgNjAuNTA4OCAyMC4yMjE3IDYxLjI5OTggMTguNjc4N1YxMS4zOTg0QzYwLjQ4OTMgOS45MDQzIDU5LjI0NDEgOS4xNTcyMyA1Ny41NjQ1IDkuMTU3MjNDNTYuMjM2MyA5LjE1NzIzIDU1LjIwMTIgOS42Njk5MiA1NC40NTkgMTAuNjk1M0M1My43MTY4IDExLjcyMDcgNTMuMzQ1NyAxMy4yMzkzIDUzLjM0NTcgMTUuMjUxWk03OC4wMTM3IDIxLjQzMjZDNzYuOTU5IDIyLjY3MjkgNzUuNDExMSAyMy4yOTMgNzMuMzcwMSAyMy4yOTNDNzEuNjgwNyAyMy4yOTMgNzAuMzkxNiAyMi44MDQ3IDY5LjUwMjkgMjEuODI4MUM2OC42MjQgMjAuODQxOCA2OC4xNzk3IDE5LjM4NjcgNjguMTY5OSAxNy40NjI5VjcuMTUwMzlINzAuODc5OVYxNy4zODk2QzcwLjg3OTkgMTkuNzkyIDcxLjg1NjQgMjAuOTkzMiA3My44MDk2IDIwLjk5MzJDNzUuODc5OSAyMC45OTMyIDc3LjI1NjggMjAuMjIxNyA3Ny45NDA0IDE4LjY3ODdWNy4xNTAzOUg4MC42NTA0VjIzSDc4LjA3MjNMNzguMDEzNyAyMS40MzI2Wk04Ny43MjU2IDIzSDg1LjAxNTZWMC41SDg3LjcyNTZWMjNaTTk1LjAyMDUgMjNIOTIuMzEwNVY3LjE1MDM5SDk1LjAyMDVWMjNaTTkyLjA5MDggMi45NDYyOUM5Mi4wOTA4IDIuNTA2ODQgOTIuMjIyNyAyLjEzNTc0IDkyLjQ4NjMgMS44MzMwMUM5Mi43NTk4IDEuNTMwMjcgOTMuMTYwMiAxLjM3ODkxIDkzLjY4NzUgMS4zNzg5MUM5NC4yMTQ4IDEuMzc4OTEgOTQuNjE1MiAxLjUzMDI3IDk0Ljg4ODcgMS44MzMwMUM5NS4xNjIxIDIuMTM1NzQgOTUuMjk4OCAyLjUwNjg0IDk1LjI5ODggMi45NDYyOUM5NS4yOTg4IDMuMzg1NzQgOTUuMTYyMSAzLjc1MTk1IDk0Ljg4ODcgNC4wNDQ5MkM5NC42MTUyIDQuMzM3ODkgOTQuMjE0OCA0LjQ4NDM4IDkzLjY4NzUgNC40ODQzOEM5My4xNjAyIDQuNDg0MzggOTIuNzU5OCA0LjMzNzg5IDkyLjQ4NjMgNC4wNDQ5MkM5Mi4yMjI3IDMuNzUxOTUgOTIuMDkwOCAzLjM4NTc0IDkyLjA5MDggMi45NDYyOVpNMTAxLjkwNSAyMC43MDAySDExNC4xMDdWMjNIOTguNTgwMVYyMC44OTA2TDExMC4yNyAzLjk4NjMzSDk4Ljc3MDVWMS42NzE4OEgxMTMuNjM5VjMuNzM3M0wxMDEuOTA1IDIwLjcwMDJaTTExOS44NjQgMjAuNzAwMkgxMzIuMDY2VjIzSDExNi41MzlWMjAuODkwNkwxMjguMjI5IDMuOTg2MzNIMTE2LjcyOVYxLjY3MTg4SDEzMS41OThWMy43MzczTDExOS44NjQgMjAuNzAwMlpNMTM3LjgyMyAyMC43MDAySDE1MC4wMjVWMjNIMTM0LjQ5OFYyMC44OTA2TDE0Ni4xODggMy45ODYzM0gxMzQuNjg4VjEuNjcxODhIMTQ5LjU1N1YzLjczNzNMMTM3LjgyMyAyMC43MDAyWk0xNTkuNTAzIDIzLjI5M0MxNTcuMzU0IDIzLjI5MyAxNTUuNjA2IDIyLjU4OTggMTU0LjI1OSAyMS4xODM2QzE1Mi45MTEgMTkuNzY3NiAxNTIuMjM3IDE3Ljg3NzkgMTUyLjIzNyAxNS41MTQ2VjE1LjAxNjZDMTUyLjIzNyAxMy40NDQzIDE1Mi41MzUgMTIuMDQzIDE1My4xMzEgMTAuODEyNUMxNTMuNzM2IDkuNTcyMjcgMTU0LjU3NiA4LjYwNTQ3IDE1NS42NSA3LjkxMjExQzE1Ni43MzQgNy4yMDg5OCAxNTcuOTA2IDYuODU3NDIgMTU5LjE2NiA2Ljg1NzQyQzE2MS4yMjcgNi44NTc0MiAxNjIuODI4IDcuNTM2MTMgMTYzLjk3MSA4Ljg5MzU1QzE2NS4xMTMgMTAuMjUxIDE2NS42ODUgMTIuMTk0MyAxNjUuNjg1IDE0LjcyMzZWMTUuODUxNkgxNTQuOTQ3QzE1NC45ODYgMTcuNDE0MSAxNTUuNDQgMTguNjc4NyAxNTYuMzEgMTkuNjQ1NUMxNTcuMTg4IDIwLjYwMjUgMTU4LjMwMiAyMS4wODExIDE1OS42NDkgMjEuMDgxMUMxNjAuNjA2IDIxLjA4MTEgMTYxLjQxNyAyMC44ODU3IDE2Mi4wODEgMjAuNDk1MUMxNjIuNzQ1IDIwLjEwNDUgMTYzLjMyNiAxOS41ODY5IDE2My44MjQgMTguOTQyNEwxNjUuNDc5IDIwLjIzMTRDMTY0LjE1MSAyMi4yNzI1IDE2Mi4xNTkgMjMuMjkzIDE1OS41MDMgMjMuMjkzWk0xNTkuMTY2IDkuMDgzOThDMTU4LjA3MiA5LjA4Mzk4IDE1Ny4xNTQgOS40ODQzOCAxNTYuNDEyIDEwLjI4NTJDMTU1LjY3IDExLjA3NjIgMTU1LjIxMSAxMi4xODk1IDE1NS4wMzUgMTMuNjI1SDE2Mi45NzVWMTMuNDE5OUMxNjIuODk2IDEyLjA0MyAxNjIuNTI1IDEwLjk3ODUgMTYxLjg2MSAxMC4yMjY2QzE2MS4xOTcgOS40NjQ4NCAxNjAuMjk5IDkuMDgzOTggMTU5LjE2NiA5LjA4Mzk4Wk0xNzYuNDk1IDkuNTgyMDNDMTc2LjA4NSA5LjUxMzY3IDE3NS42NDEgOS40Nzk0OSAxNzUuMTYyIDkuNDc5NDlDMTczLjM4NSA5LjQ3OTQ5IDE3Mi4xNzkgMTAuMjM2MyAxNzEuNTQ0IDExLjc1VjIzSDE2OC44MzRWNy4xNTAzOUgxNzEuNDcxTDE3MS41MTUgOC45ODE0NUMxNzIuNDAzIDcuNTY1NDMgMTczLjY2MyA2Ljg1NzQyIDE3NS4yOTQgNi44NTc0MkMxNzUuODIxIDYuODU3NDIgMTc2LjIyMiA2LjkyNTc4IDE3Ni40OTUgNy4wNjI1VjkuNTgyMDNaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K" alt="Логотип" />
@@ -51,9 +52,9 @@
           <h1 class="header-title">Главная</h1>
           <div class="header-info">
             <div class="header-info-login">
-              <a class="header-info-link log" href="#">Авторизация</a>
+              <a class="header-info-link login" href="#">Авторизация</a>
               <span> / </span>
-              <a class="header-info-link reg" href="#">Регистрация</a>
+              <a class="header-info-link register" href="#">Регистрация</a>
             </div>
             <a class="header-meta" href="#">
               <div class="header-meta-picture">
@@ -511,109 +512,5 @@
       </a>
       <div class="copyright">&copy; 2020. Все права защищены</div>
     </footer>
-    <!-- Containers-form -->
-    <div class="container-form">
-      <div class="overlay" id="auth">
-        <form id="13" class="modal">
-          <header class="header-form">
-            <h1 class="form-title">Авторизация</h1>
-          </header>
-          <div class="fields">
-            <div class="form-field">
-              <label for="login">Логин:</label>
-              <input 
-                type="text"
-                name="login"
-                id="login"
-              />
-            </div>
-            <div class="form-field">
-              <label for="password">Пароль:</label>
-              <input 
-                type="password"
-                name="password"
-                id="password"
-              />
-            </div>
-            <div class="form-control">
-              <button type="submit">Войти</button>
-              <button type="button">Отмена</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <!-- Login -->
-      <div class="overlay" id="reg">
-        <form id="12" class="modal">
-          <header class="header-form">
-            <h1 class="form-title">Регистрация</h1>
-          </header>
-          <div class="fields">
-            <div class="form-field">
-              <label for="surname">Фамилия:</label>
-              <input
-                type="text"
-                pattern="^[a-zA-ZА-Яа-яЁё]+$"
-                name="surname"
-                id="surname"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="first-name">Имя:</label>
-              <input
-                type="text"
-                pattern="^[a-zA-ZА-Яа-яЁё]+$"
-                name="first-name"
-                id="first-name"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="patronymic">Отчество:</label>
-              <input
-                type="text"
-                name="patronymic"
-                id="patronymic"
-                pattern="^[a-zA-ZА-Яа-яЁё]+$"
-              />
-            </div>
-            <div class="form-field">
-              <label for="email">Почта:</label>
-              <input 
-                type="email" 
-                name="email" 
-                id="email" 
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="password-first">Пароль:</label>
-              <input
-                type="password"
-                name="password-first"
-                id="password-first"
-                required
-              />
-            </div>
-            <div class="form-field">
-              <label for="password-repeat">Повторите пароль:</label>
-              <input
-                type="password"
-                name="password-repeat"
-                id="password-repeat"
-                required
-              />
-            </div>
-            <div class="form-control">
-              <button type="submit">Зарегистрироваться</button>
-              <button type="button">Отмена</button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- Reg -->
-    <!-- End containers-form -->
   <script src="main.js"></script></body>
 </html>
